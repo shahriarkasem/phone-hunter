@@ -26,10 +26,8 @@ const displayData = allData => {
     }
     else{
         allData.slice(0,20).forEach(data => {
-            // console.log(data)
             const div = document.createElement('div');
             const dataSlug = data.slug;
-            // console.log(dataSlug);
             div.innerHTML = `
             <div class="card">
                 <img src="${data.image}" class="card-img-top img-custom" alt="...">
@@ -54,7 +52,7 @@ function getDetails(dataId) {
 }
 // displayDetails
 const displayDetails = everyData => {
-    // console.log(everyData);
+    console.log(everyData);
     const showDetails = document.getElementById('show-details');
     showDetails.textContent = '';
     const div = document.createElement('div');
@@ -63,10 +61,12 @@ const displayDetails = everyData => {
             <img src="${everyData.image}" class="card-img-top img-fluid img-custom-details" alt="...">
             <div class="card-body">
                 <h4 class="card-text">${everyData.name}</h4>
-                <h5 class="card-title">Release Date: ${everyData.releaseDate}</h5>
+                <h6 class="card-title">Release Date: ${everyData.releaseDate}</h6>
                 </br>
                 <h6 class="bold">Main Features:</h6>
                 <p>Display Size: ${everyData.mainFeatures.displaySize}</P>
+                <p>Chipset: ${everyData.mainFeatures.chipSet}</P>
+                <p>Storage: ${everyData.mainFeatures.storage}</P>
                 <p>Memory: ${everyData.mainFeatures.memory}</P>
                 <p><span class="bold">Sensors:</span> ${everyData.mainFeatures.sensors}</p>
                 <h6 class="bold">Others:</h6>
