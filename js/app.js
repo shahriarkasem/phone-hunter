@@ -18,6 +18,8 @@ const loadData = () => {
 const displayData = allData => {
     const searchResult = document.getElementById('search-result');
     searchResult.textContent = '';
+    const showDetails = document.getElementById('show-details');
+    showDetails.textContent = '';
     if(allData.length == 0){
         document.getElementById('no-result').style.display = 'block';
     }
