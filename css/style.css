@@ -12,3 +12,21 @@ h1{
     background-color: rgb(48, 122, 122);
     color: white;
 }
+#error-message{
+    text-align: center;
+    padding-top: 10px;
+}
+#write-something{
+    display: none;
+    color: red;
+    font-size: 20px;
+}
+#no-result{
+    display: none;
+    color: red;
+    font-size: 20px;
+}
+.img-custom{
+    width: 80%;
+    height: 400px;
+}

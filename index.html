@@ -12,26 +12,29 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <header>
+    <header class="mt-2 mb-3">
         <h1>Mobile Nirmod Store</h1>
     </header>
     <main>
         <section>
             <div class="d-flex justify-content-center">
                 <input id="input-field" type="text">
-                <button id="search-btn" class="ms-2 px-3 rounded">Search</button>
+                <button onclick="loadData()" id="search-btn" class="ms-2 px-3 rounded">Search</button>
+            </div>
+            <div>
+                <p id="error-message"><span id="write-something">Please write something</span><span id="no-result">No result found!</span></p>
             </div>
             <div id="search-results" class="container">
                 <br>
-                <div id="search-result" class="row">
-                    <div class="card col col-lg-4">
-                        <img src="${}" class="card-img-top img-fluid" alt="...">
+                <div id="search-result" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <!-- <div class="card col col-lg-4">
+                        <img src="${data.image}" class="card-img-top img-fluid" alt="...">
                         <div class="card-body">
-                          <h4 class="card-title">${}</h4>
-                          <h5 class="card-text">${}</h5>
+                          <h4 class="card-title">${data.phone_name}</h4>
+                          <h5 class="card-text">${data.brand}</h5>
                           <a href="#" class="btn btn-primary">Details</a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
