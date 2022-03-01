@@ -1,0 +1,14 @@
+body{
+    background-color: rgba(127, 255, 212, 0.274);
+}
+/* header */
+h1{
+    color: rgb(82, 32, 199);
+    text-align: center;
+}
+/* main section */
+#search-btn{
+    border: none;
+    background-color: rgb(48, 122, 122);
+    color: white;
+}
