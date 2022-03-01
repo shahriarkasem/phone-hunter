@@ -23,15 +23,17 @@ const displayData = allData => {
     }
     else{
         allData.slice(0,20).forEach(data => {
-            console.log(data)
+            // console.log(data)
             const div = document.createElement('div');
+            const dataSlug = data.slug;
+            // console.log(dataSlug);
             div.innerHTML = `
             <div class="card">
                 <img src="${data.image}" class="card-img-top img-custom" alt="...">
                 <div class="card-body">
                     <h4 class="card-text">${data.brand}</h4>
                     <h5 class="card-title">${data.phone_name}</h5>
-                    <button onclick="" class="btn btn-primary">Details</button>
+                    <button onclick="getDetails('${dataSlug}')" class="btn btn-primary">Details</button>
                 </div>
             </div>
             `
@@ -40,4 +42,10 @@ const displayData = allData => {
         document.getElementById('no-result').style.display = 'none';
     }
 }
-
+// showDetails
+function getDetails(dataId) {
+    // console.log(dataId);
+    fetch(`https://openapi.programming-hero.com/api/phone/${dataId}`)
+    .then(res => res.json())
+    .then(data => console.log(data))
+}
