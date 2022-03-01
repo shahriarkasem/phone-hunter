@@ -31,7 +31,7 @@ const displayData = allData => {
                 <div class="card-body">
                     <h4 class="card-text">${data.brand}</h4>
                     <h5 class="card-title">${data.phone_name}</h5>
-                    <a href="https://openapi.programming-hero.com/api/phone/${data.slug}" class="btn btn-primary">Details</a>
+                    <button onclick="" class="btn btn-primary">Details</button>
                 </div>
             </div>
             `
