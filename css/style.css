@@ -32,3 +32,11 @@ h1{
     padding-left: 15%;
     padding-top: 15px;
 }
+.img-custom-details{
+    width: 400px;
+    height: 300pz;
+}
+.bold{
+    font-size: large;
+    font-weight: 500;
+}
