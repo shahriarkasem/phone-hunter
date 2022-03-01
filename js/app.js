@@ -6,6 +6,7 @@ const loadData = () => {
     if(inputFieldText == ''){
         // please write something
         document.getElementById('write-something').style.display = 'block';
+        document.getElementById('no-result').style.display = 'none';
     }
     else{
         fetch(`https://openapi.programming-hero.com/api/phones?search=${inputFieldText}`)
