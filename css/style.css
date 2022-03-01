@@ -29,4 +29,11 @@ h1{
 .img-custom{
     width: 80%;
     height: 400px;
+    padding-left: 15%;
+    padding-top: 15px;
+}
+.details-button{
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
 }
