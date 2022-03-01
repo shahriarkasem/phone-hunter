@@ -33,7 +33,7 @@ const displayData = allData => {
                 <div class="card-body">
                     <h4 class="card-text">${data.brand}</h4>
                     <h5 class="card-title">${data.phone_name}</h5>
-                    <button onclick="getDetails('${dataSlug}')" class="btn btn-primary">Details</button>
+                    <a href="#show-details"><button onclick="getDetails('${dataSlug}')" class="btn btn-primary">Details</button></a>
                 </div>
             </div>
             `
@@ -50,7 +50,7 @@ function getDetails(dataId) {
     .then(data => displayDetails(data.data))
 }
 const displayDetails = everyData => {
-    console.log(everyData);
+    // console.log(everyData);
     const showDetails = document.getElementById('show-details');
     showDetails.textContent = '';
     const div = document.createElement('div');
@@ -61,7 +61,7 @@ const displayDetails = everyData => {
                 <h4 class="card-text">${everyData.name}</h4>
                 <h5 class="card-title">Release Date: ${everyData.releaseDate}</h5>
                 </br>
-                <h6 class="bold">Main Features</h6>
+                <h6 class="bold">Main Features:</h6>
                 <p>Display Size: ${everyData.mainFeatures.displaySize}</P>
                 <p>Memory: ${everyData.mainFeatures.memory}</P>
                 <p><span class="bold">Sensors:</span> ${everyData.mainFeatures.sensors}</p>
