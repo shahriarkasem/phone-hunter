@@ -56,7 +56,7 @@ const displayDetails = everyData => {
     const div = document.createElement('div');
     div.innerHTML = `
         <div class="card">
-            <img src="${everyData.image}" class="card-img-top img-custom-details" alt="...">
+            <img src="${everyData.image}" class="card-img-top img-fluid img-custom-details" alt="...">
             <div class="card-body">
                 <h4 class="card-text">${everyData.name}</h4>
                 <h5 class="card-title">Release Date: ${everyData.releaseDate}</h5>

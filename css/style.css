@@ -35,9 +35,8 @@ h1{
     padding-top: 15px;
 }
 .img-custom-details{
-    width: 400px;
-    height: 300pz;
-    justify-items: center;
+    width: 90%;
+    padding-left: 5%;
 }
 .bold{
     font-size: large;
