@@ -64,7 +64,6 @@ const displayDetails = everyData => {
                 <h6 class="bold">Main Features</h6>
                 <p>Display Size: ${everyData.mainFeatures.displaySize}</P>
                 <p>Memory: ${everyData.mainFeatures.memory}</P>
-                <p>Chipset: ${everyData.chipset}</p>
                 <p><span class="bold">Sensors:</span> ${everyData.mainFeatures.sensors}</p>
                 <h6 class="bold">Others:</h6>
                 <p>Bluetooth: ${everyData.others.Bluetooth}</p>
