@@ -51,6 +51,7 @@ function getDetails(dataId) {
     .then(res => res.json())
     .then(data => displayDetails(data.data))
 }
+// displayDetails
 const displayDetails = everyData => {
     // console.log(everyData);
     const showDetails = document.getElementById('show-details');
